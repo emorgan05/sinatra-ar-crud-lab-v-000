@@ -40,4 +40,13 @@ class ApplicationController < Sinatra::Base
     
     erb :edit
   end
+
+  patch '/posts/:id' do
+    id = params[:id]
+    @post = Post.find(id)
+    @post.update
+    @post.save
+
+    
+  end
 end
