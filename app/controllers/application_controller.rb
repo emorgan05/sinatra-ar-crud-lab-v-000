@@ -16,8 +16,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/posts' do
-    params
-    binding.pry
     Post.create(params)
+    binding.pry
   end
 end
