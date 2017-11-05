@@ -27,5 +27,9 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
+  get '/posts/:id' do
+    params
+    binding.pry
+  end
 
 end
