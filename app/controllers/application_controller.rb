@@ -20,12 +20,12 @@ class ApplicationController < Sinatra::Base
 
     erb :index
   end
-  
+
   post '/posts' do
     @post = Post.create(params)
 
     erb :index
   end
 
-  
+
 end
