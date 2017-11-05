@@ -46,7 +46,7 @@ class ApplicationController < Sinatra::Base
     binding.pry
     id = params[:id]
     @post = Post.find(id)
-    @post.update
+    @post.update(params[:id], params)
 
     redirect '/posts/:id'
   end
