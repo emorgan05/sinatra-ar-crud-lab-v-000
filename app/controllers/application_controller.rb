@@ -45,5 +45,7 @@ class ApplicationController < Sinatra::Base
     id = params[:id]
     @post = Post.find(id)
     @post.update
+
+    redirect to '/posts/:id'
   end
 end
