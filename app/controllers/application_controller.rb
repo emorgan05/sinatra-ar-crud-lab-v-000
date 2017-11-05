@@ -48,6 +48,5 @@ class ApplicationController < Sinatra::Base
     @post.update(hash)
 
     redirect to('/posts/<%= id %>')
-    binding.pry
   end
 end
